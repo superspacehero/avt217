@@ -1,24 +1,29 @@
-body {
-  font: normal 1em Verdana; 
-  width: 80%; 
+body
+{
+  font: normal 1em Verdana;
+  color: #666
+  width: 80%;
   margin: 1em auto;
 }
-   
-h1 {
+
+h1
+{
   font: italic 3em Arial; 
-  color: rgb(23, 109, 109); 
+  color: #888; 
   margin: 1em 0 1em;
 }
-   
-img {
+
+img
+{
   margin: 0 20px 0 0
 }
-   
+
 h1 img {
   margin-bottom: -20px;
 }
-   
-small {
-  color: #666666;
+
+small
+{
+  color: #666;
 }
 

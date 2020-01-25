@@ -1,6 +1,6 @@
 body
 {
-  font: normal 1em Verdana;
+  font: normal 2em Helvetica;
   color: #666;
   width: 80%;
   margin: 1em auto;
@@ -8,7 +8,7 @@ body
 
 h1
 {
-  font: italic 3em Arial; 
+  font: italic 6em Helvetica; 
   color: #888; 
   margin: 1em 0 1em;
 }

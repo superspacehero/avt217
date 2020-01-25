@@ -8,7 +8,7 @@ body
 
 h1
 {
-  font: italic 6em Helvetica; 
+  font: bold 6em Helvetica; 
   color: #888; 
   margin: 1em 0 1em;
 }

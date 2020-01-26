@@ -1,50 +1,70 @@
 body
 {
-  font: normal 1.4em Helvetica;
-  color: #666;
-  width: 80%;
-  margin: 1em auto;
+	font: normal 1.4em Helvetica;
+	color: #666;
+	width: 80%;
+	margin: 1em auto;
 }
 
 h1
 {
-  font: bold 4em Helvetica; 
-  color: #888; 
-  margin: 1em 0 1em;
+	font: bold 4em Helvetica; 
+	color: #888; 
+	margin: 1em 0 1em;
 }
 
 title
 {
 	font-weight: bold;
 	font-size: 2em;
-  text-align:center;
+	text-align:center;
 }
 
 center
 {
 	font-weight: bold;
 	font-size: 1.4em;
-  text-align:center;
+	text-align:center;
 }
 
 smallcenter
 {
 	font-weight: bold;
 	font-size: 1.1em;
-  text-align:center;
+	text-align:center;
 }
 
 img
 {
-  margin: 0 20px 0 0
+	margin: 0 20px 0 0
 }
 
 h1 img {
-  margin-bottom: -20px;
+	margin-bottom: -20px;
 }
 
 small
 {
-  color: #666;
+	color: #666;
+}
+
+a {
+    transition: background 250ms ease-in-out, transform 150ms ease;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+	text-decoration: underline;
 }
 

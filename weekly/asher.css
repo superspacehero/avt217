@@ -2,7 +2,6 @@ body
 {
 	font-family: Helvetica;
 	font-size: 1.4em;
-	background-color: #000;
 	color: #666;
 	margin: 1em auto;
 }
@@ -16,23 +15,17 @@ h1
 
 title
 {
-	font-weight: bold;
-	font-size: 2em;
-	text-align:center;
+	font: bold 2em;
 }
 
 center
 {
-	font-weight: bold;
-	font-size: 1.4em;
-	text-align:center;
+	font: bold 1.4em;
 }
 
 smallcenter
 {
-	font-weight: bold;
-	font-size: 1.1em;
-	text-align:center;
+	font: bold 1.1em;
 }
 
 img

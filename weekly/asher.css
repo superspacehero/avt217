@@ -37,7 +37,7 @@ smallcenter
 
 img
 {
-	margin: 0 20px 0 0
+	margin: 0 20px 0 0;
 }
 
 h1 img
@@ -52,7 +52,7 @@ small
 
 a
 {
-	color: #666
+	color: #666;
 	transition: background 250ms ease-in-out, transform 150ms ease;
 }
 

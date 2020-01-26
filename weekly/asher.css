@@ -61,10 +61,12 @@ a:visited {
 }
 
 a:hover {
+    	transform: scale(1.1);
 	text-decoration: underline;
 }
 
 a:active {
+    	transform: scale(0.9);
 	text-decoration: underline;
 }
 

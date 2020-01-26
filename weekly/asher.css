@@ -1,14 +1,14 @@
 body
 {
-	font: normal 1.4em Helvetica;
+	font-family: Helvetica;
+	font-size: 1.4em;
 	color: #666;
-	width: 80%;
 	margin: 1em auto;
 }
 
 h1
 {
-	font: bold 4em Helvetica; 
+	font: bold 4em; 
 	color: #888; 
 	margin: 1em 0 1em;
 }
@@ -49,7 +49,8 @@ small
 }
 
 a {
-    transition: background 250ms ease-in-out, transform 150ms ease;
+	color: #666
+	transition: background 250ms ease-in-out, transform 150ms ease;
 }
 
 a:link {
@@ -61,12 +62,12 @@ a:visited {
 }
 
 a:hover {
-    	transform: scale(1.1);
+	transform: scale(1.1);
 	text-decoration: underline;
 }
 
 a:active {
-    	transform: scale(0.9);
+	transform: scale(0.9);
 	text-decoration: underline;
 }
 

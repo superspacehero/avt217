@@ -5,12 +5,13 @@ body
 	font-family: Helvetica;
 	color: #666;
 	margin: 1em auto;
+	width: 80%;
 }
 
 h1
 {
 	font-weight: bold;
-	font-size: 4em;
+	font-size: 6em;
 	color: #888; 
 	margin: 1em 0 1em;
 }
@@ -18,19 +19,19 @@ h1
 p.title
 {
 	font-weight: bold;
-	font-size: 2em;
+	font-size: 3em;
 }
 
 p.center
 {
 	font-weight: bold;
-	font-size: 1.4em;
+	font-size: 2em;
 }
 
 p.smallcenter
 {
 	font-weight: bold;
-	font-size: 1.1em;
+	font-size: 1.5em;
 }
 
 img

@@ -15,19 +15,19 @@ h1
 	margin: 1em 0 1em;
 }
 
-title
+p.title
 {
 	font-weight: bold;
 	font-size: 2em;
 }
 
-center
+p.center
 {
 	font-weight: bold;
 	font-size: 1.4em;
 }
 
-smallcenter
+p.smallcenter
 {
 	font-weight: bold;
 	font-size: 1.1em;

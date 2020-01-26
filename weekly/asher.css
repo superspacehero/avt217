@@ -1,6 +1,6 @@
 body
 {
-  font: normal 2em Helvetica;
+  font: normal 1.4em Helvetica;
   color: #666;
   width: 80%;
   margin: 1em auto;
@@ -8,9 +8,30 @@ body
 
 h1
 {
-  font: bold 6em Helvetica; 
+  font: bold 4em Helvetica; 
   color: #888; 
   margin: 1em 0 1em;
+}
+
+title
+{
+	font-weight: bold;
+	font-size: 2em;
+  text-align:center;
+}
+
+center
+{
+	font-weight: bold;
+	font-size: 1.4em;
+  text-align:center;
+}
+
+smallcenter
+{
+	font-weight: bold;
+	font-size: 1.1em;
+  text-align:center;
 }
 
 img

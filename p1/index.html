@@ -5,6 +5,7 @@
   		<meta charset="utf-8">
 		<title>About Me - Asher Pinson</title>
 		<link rel="stylesheet" href="/avt217/asher.css" type="text/css">
+  		<link rel="import" href="/avt217/header.html">
 	  
     	<style>
 			div.intro {
@@ -220,9 +221,9 @@
 	</head>
 	
 	<body>
-		<div class="header">
-			<iframe src="/avt217/header.html"></iframe>
-	     	</div>
+		<script>
+			var content = document.querySelector('link[rel="import"]').import;
+		</script>
 		
 		<a class="anchor" id="aboutme"></a>
 

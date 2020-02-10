@@ -8,7 +8,6 @@ body:not(svg.intro)
 	width: 80%;
 	
 	background-color: #2A0085;
-	text-align:center;
 	font-family: Helvetica;
 	color: #666;
 	margin: 0.5em auto;

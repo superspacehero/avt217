@@ -221,12 +221,10 @@
 	</head>
 	
 	<body>
-		<script>
-			var content = document.querySelector('link[rel="import"]').import;
-		</script>
-		
 		<a class="anchor" id="aboutme"></a>
 
+		<iframe src="/avt217/header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+		
 		<p class="title">About Me</p>
 
 		<p>Hello! I am a Game Design major at George Mason University in Fairfax, Virginia.</p>

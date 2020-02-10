@@ -57,7 +57,7 @@ small
 a
 {
 	color: #666;
-	transition: background 250ms ease-in-out, transform 150ms ease;
+	transition: background 100ms ease-in-out, transform 150ms ease;
 }
 
 a:link
@@ -107,7 +107,7 @@ a:active
 }
 
 .content {
-  padding: 16px;
+  padding: 1em;
 }
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */
@@ -119,5 +119,5 @@ a:active
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
-  padding-top: 102px;
+  padding-top: 1em;
 }

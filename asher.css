@@ -1,6 +1,6 @@
 html
 {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body
@@ -8,44 +8,45 @@ body
 	width: 80%;
 	
 	background-color: #2A0085;
+	font-size: 2vh;
 	font-family: Helvetica;
 	color: #666;
-	margin: 0.5em auto;
+	margin: 2vh auto;
 }
 
 h1
 {
 	font-weight: bold;
-	font-size: 6em;
+	font-size: 6vw;
 	color: #888;
 }
 
 p.title
 {
 	font-weight: bold;
-	font-size: 3em;
+	font-size: 3vw;
 }
 
 p.center
 {
 	font-weight: bold;
-	font-size: 2em;
+	font-size: 2vw;
 }
 
 p.smallcenter
 {
 	font-weight: bold;
-	font-size: 1.5em;
+	font-size: 1.5vw;
 }
 
 img
 {
-	margin: 0 20px 0 0;
+	margin: 0 1.5vh 0 0;
 }
 
 h1 img
 {
-	margin-bottom: -20px;
+	margin-bottom: -1.5vh;
 }
 
 small
@@ -79,44 +80,44 @@ a:active
 {
 	transform: scale(0.9);
 	text-decoration: underline;
-}
+	}
 
 .header
 {
-    top: 0;
-    left: 0;
-    right: 0;
-    position: fixed;
-    table-layout: fixed;
-    width: 100%;
-    text-align: center;
-    overflow: hidden;
-    background-color: #333;
-    border-collapse: collapse;
+	top: 0;
+	left: 0;
+	right: 0;
+	position: fixed;
+	table-layout: fixed;
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+	background-color: #333;
+	border-collapse: collapse;
 }
 
 .header a
 {
-    display: inline-block;
-    color: #a2a2a2;
-    text-align: center;
-    padding: 0.8em 0em;
-    font-size: 0.9em;
-    width: 100%;
+	display: inline-block;
+	color: #a2a2a2;
+	text-align: center;
+  	padding: 1.2vh 1.5vh;
+  	font-size: 1.5vh;
+	width: 100%;
 }
 
 .content {
-  padding: 1em;
+	padding-top: 1.5vh;
 }
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
+	position: fixed;
+	top: 0;
+	width: 100%
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
-  padding-top: 1em;
+	padding-top: 4vh;
 }

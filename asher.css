@@ -82,3 +82,42 @@ a:active
 	text-decoration: underline;
 }
 
+.header
+{
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    table-layout: fixed;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    background-color: #333;
+    border-collapse: collapse;
+}
+
+.header a
+{
+    display: inline-block;
+    color: #a2a2a2;
+    text-align: center;
+    padding: 0.8em 0em;
+    font-size: 0.9em;
+    width: 100%;
+}
+
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}

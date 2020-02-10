@@ -1,150 +1,281 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style> 
+  <head>
+    <style> 
 
-div.intro {
-  overflow: hidden;
-}
-    div.intro.split {
-      width: 100%;
-      height: 50%;
-      position: absolute;
-      left: 0%;
-      animation-name: introSplit;
-      animation-duration: 0.16s;
-      animation-fill-mode: forwards;
+    div.intro {
+      overflow: hidden;
+    }
+        div.intro.split {
+          width: 100%;
+          height: 50%;
+          position: absolute;
+          left: 0%;
+          animation-name: introSplit;
+          animation-duration: 0.16s;
+          animation-fill-mode: forwards;
+        }
+
+            div.intro.split.p1 {
+              background-color: black;
+            }
+
+                div.intro.split.p1.top {
+                  top: 0%;
+                }
+
+                div.intro.split.p1.bottom {
+                  bottom: 0%;
+                }
+
+            div.intro.split.p2 {
+                background-color: #4160B4;
+                animation-delay: 0.1s;
+            }
+                div.intro.split.p2.top {
+                  top: 0%;
+                }
+
+                div.intro.split.p2.bottom {
+                  bottom: 0%;
+                }
+
+            div.intro.split.p3 {
+                background-color: #F6502D;
+                animation-delay: 0.16s;
+            }
+                div.intro.split.p3.top {
+                  top: 0%;
+                }
+
+                div.intro.split.p3.bottom {
+                  bottom: 0%;
+                }
+
+            div.intro.split.p4 {
+                background-color: #F48E16;
+                animation-delay: 0.28s;
+            }
+                div.intro.split.p4.top {
+                  top: 0%;
+                }
+
+                div.intro.split.p4.bottom {
+                  bottom: 0%;
+                }
+
+            div.intro.split.p5 {
+                background-color: #63C3A6;
+                animation-delay: 0.36s;
+            }
+                div.intro.split.p5.top {
+                  top: 0%;
+                }
+
+                div.intro.split.p5.bottom {
+                  bottom: 0%;
+                }
+
+    svg.intro {
+        overflow: hidden;
+        position:fixed;
+        top: 0%;
+        bottom: 0%;
+        width: 100%;
+        height:100%;
+
+        animation-fill-mode: forwards;
+        animation-timing-function: ease;
     }
 
-        div.intro.split.p1 {
-          background-color: black;
+        svg.intro.split {
+            fill:#F5CA00;
+
+            animation-duration: 0.27s;
+            animation-delay: 2.38s;
+        }
+            svg.intro.split.left {
+              animation-name: introSplitLeft;
+              left: 0%;
+            }
+
+            svg.intro.split.right {
+              animation-name: introSplitRight;
+              right: 0%;
+            }
+
+        svg.intro.slant {
+            transform: translate(50%,100%);
+            animation-duration: 3.58s;
+        }
+            svg.intro.slant.orange {
+              animation-name: introSlantOrange;
+              fill:#F48E16;
+            }
+
+            svg.intro.slant.cyan {
+              animation-name: introSlantCyan;
+              fill:#63C3A6;
+            }
+
+            svg.intro.slant.red {
+              animation-name: introSlantRed;
+              fill:#F6502D;
+            }
+
+            svg.intro.slant.blue {
+              animation-name: introSlantBlue;
+              fill:#4160B4;
+            }
+
+        svg.intro.text {
+            animation-duration: 3.58s;
         }
 
-            div.intro.split.p1.top {
-              top: 0%;
-            }
-
-            div.intro.split.p1.bottom {
-              bottom: 0%;
-            }
-
-        div.intro.split.p2 {
-            background-color: #4160B4;
-            animation-delay: 0.1s;
+        svg.intro.text.black {
+          	animation-name: introTextBlack;
+            transform: translate(-100%,100%);
         }
-            div.intro.split.p2.top {
-              top: 0%;
-            }
 
-            div.intro.split.p2.bottom {
-              bottom: 0%;
-            }
-
-        div.intro.split.p3 {
-            background-color: #F6502D;
-            animation-delay: 0.16s;
+        svg.intro.text.white {
+          	animation-name: introTextWhite;
+            transform: translate(100%,100%);
         }
-            div.intro.split.p3.top {
-              top: 0%;
-            }
 
-            div.intro.split.p3.bottom {
-              bottom: 0%;
-            }
 
-        div.intro.split.p4 {
-            background-color: #F48E16;
-            animation-delay: 0.28s;
-        }
-            div.intro.split.p4.top {
-              top: 0%;
-            }
-
-            div.intro.split.p4.bottom {
-              bottom: 0%;
-            }
-
-        div.intro.split.p5 {
-            background-color: #63C3A6;
-            animation-delay: 0.36s;
-        }
-            div.intro.split.p5.top {
-              top: 0%;
-            }
-
-            div.intro.split.p5.bottom {
-              bottom: 0%;
-            }
-            
-svg.intro.split {
-	overflow: hidden;
-	position:fixed;
-  	top: 0%;
-    bottom: 0%;
-	width: 100%;
-    height:100%;
-    
-    fill:#F5CA00;
-    
-    animation-duration: 0.27s;
-    animation-fill-mode: forwards;
-	animation-delay: 2.38s;
-    animation-timing-function: ease;
-}
-	svg.intro.split.left {
-	animation-name: introSplitLeft;
-  	left: 0%;
-    }
-    
-    svg.intro.split.right {
-	animation-name: introSplitRight;
-	right: 0%;
+    @keyframes introSplit {
+      from   {height:50%;}
+      to  {height:0%;}
     }
 
-@keyframes introSplit {
-  from   {height:50%;}
-  to  {height:0%;}
-}
+    @keyframes introSplitLeft {
+      from   {transform: translateX(0%);}
+      to  {transform: translateX(-100%);}
+    }
 
-@keyframes introSplitLeft {
-  from   {transform: translateX(0%);}
-  to  {transform: translateX(-100%);}
-}
+    @keyframes introSplitRight {
+      from   {transform: translateX(0%);}
+      to  {transform: translateX(100%);}
+    }
 
-@keyframes introSplitRight {
-  from   {transform: translateX(0%);}
-  to  {transform: translateX(100%);}
-}
-</style>
-</head>
-<body>
+    @keyframes introSlantOrange {
+      0%   {transform: translate(50%,100%);}
+      21.4%  {transform: translate(50%,100%);}
+      26.5%  {transform: translate(0%,0%);}
+      69.3%  {transform: translate(0%,0%);}
+      74.4%  {transform: translate(-50%,-100%);}
+      100%  {transform: translate(-50%,-100%);}
+    }
 
-<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+    @keyframes introSlantCyan {
+      0%   {transform: translate(50%,100%);}
+      23.3%  {transform: translate(50%,100%);}
+      28.8%  {transform: translate(0%,0%);}
+      63.7%  {transform: translate(0%,0%);}
+      68.8%  {transform: translate(-50%,-100%);}
+      100%  {transform: translate(-50%,-100%);}
+    }
 
-<svg class="intro split left" viewBox="0 0 100 100" preserveAspectRatio="none">
-  <polygon points="0,0 0,100 80,100 30,0" />
-  Sorry, your browser does not support inline SVG.
-</svg>
+    @keyframes introSlantRed {
+      0%   {transform: translate(50%,100%);}
+      21.9%  {transform: translate(50%,100%);}
+      28.4%  {transform: translate(0%,0%);}
+      66.5%  {transform: translate(0%,0%);}
+      71.6%  {transform: translate(-50%,-100%);}
+      100%  {transform: translate(-50%,-100%);}
+    }
 
-<svg class="intro split right" viewBox="0 0 100 100" preserveAspectRatio="none">
-  <polygon points="20,0 70,100 100,100 100,0" />
-  Sorry, your browser does not support inline SVG.
-</svg>
+    @keyframes introSlantBlue {
+      0%   {transform: translate(50%,100%);}
+      18.6%  {transform: translate(50%,100%);}
+      25.6%  {transform: translate(0%,0%);}
+      72.1%  {transform: translate(0%,0%);}
+      75.3%  {transform: translate(-50%,-100%);}
+      100%  {transform: translate(-50%,-100%);}
+    }
+    
 
-<div class="intro split p5 top"></div>
-<div class="intro split p5 bottom"></div>
+    @keyframes introTextBlack {
+      0%   {transform: translate(-100%,15%) scaleX(-1);}
+      7.9%  {transform: translate(100%,15%) scaleX(-1);}
+      14.4%  {transform: translate(100%,0%) scaleX(1);}
+      20%  {transform: translate(0%,0%);}
+      91.6%  {transform: translate(0%,0%);}
+      100%  {transform: translate(100%,0%);}
+    }
 
-<div class="intro split p4 top"></div>
-<div class="intro split p4 bottom"></div>
+    @keyframes introTextWhite {
+      0%   {transform: translate(100%,-15%) scaleX(-1);}
+      7%  {transform: translate(-100%,-15%) scaleX(-1);}
+      15.3%  {transform: translate(100%,0%) scaleX(1);}
+      20%  {transform: translate(0%,0%);}
+      91.6%  {transform: translate(0%,0%);}
+      100%  {transform: translate(-100%,0%);}
+    }
+    
+    </style>
+  </head>
+  <body style="background-color:#2A0085;">
 
-<div class="intro split p3 top"></div>
-<div class="intro split p3 bottom"></div>
+	<div>
+      <svg class="intro split left" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <polygon points="0,0 0,100 76,100 26,0"/>
+        Sorry, your browser does not support inline SVG.
+      </svg>
 
-<div class="intro split p2 top"></div>
-<div class="intro split p2 bottom"></div>
+      <svg class="intro split right" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <polygon points="24,0 74,100 100,100 100,0"/>
+        Sorry, your browser does not support inline SVG.
+      </svg>
 
-<div class="intro split p1 top"></div>
-<div class="intro split p1 bottom"></div>
+      <svg class="intro slant orange" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <polygon points="12.37,30.88 42.37,30.88 81.25,100 51.25,100"/>
+        Sorry, your browser does not support inline SVG.
+      </svg>
 
-</body>
+      <svg class="intro slant cyan" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <polygon points="54.65,46.61 62.15,46.61 92.18,100 84.69,100"/>
+        Sorry, your browser does not support inline SVG.
+      </svg>
+
+      <svg class="intro slant blue" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <polygon points="14.37,0 29.37,0 85.63,100 70.63,100"/>
+        Sorry, your browser does not support inline SVG.
+      </svg>
+
+      <svg class="intro slant red" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <polygon points="14.26,57.59 44.27,57.59 68.13,100 38.13,100"/>
+        Sorry, your browser does not support inline SVG.
+      </svg>
+
+
+      <div class="intro split p5 top"></div>
+      <div class="intro split p5 bottom"></div>
+
+      <div class="intro split p4 top"></div>
+      <div class="intro split p4 bottom"></div>
+
+      <div class="intro split p3 top"></div>
+      <div class="intro split p3 bottom"></div>
+
+      <div class="intro split p2 top"></div>
+      <div class="intro split p2 bottom"></div>
+
+      <div class="intro split p1 top"></div>
+      <div class="intro split p1 bottom"></div>
+
+
+      <svg class="intro text black" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <polygon points="16.41,64.17 61.56,64.17 65.63,71.39 20.47,71.39" fill="black"/>
+        <text text-anchor="middle" fill="#ffffff" font-size="8" font-family="Helvetica" x="38.985%" y="67%">About Me</text>
+        Sorry, your browser does not support inline SVG.
+      </svg>
+
+      <svg class="intro text white" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <polygon points="35.52,77.5 63.49,77.5 65.68,81.39 37.71,81.39" fill="#ffffff"/>
+        <text text-anchor="middle" fill="black" paint-order="stroke" stroke="#999999" stroke-width="0.1em" stroke-linecap="butt" stroke-linejoin="miter" font-size="4" font-family="Helvetica" x="49.505%" y="80%">Asher Pinson</text>
+        Sorry, your browser does not support inline SVG.
+      </svg>
+	</div>
+  </body>
 </html>

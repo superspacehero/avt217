@@ -221,16 +221,11 @@
 	
 	<body>
 		
-		<table class="header" id="myHeader">
-			<tr>
-				<th><a href="/">Home</a></th>
-				<th><a href="https://superspacehero.com#portfolio">Portfolio</a></th>
-				<th><a href="https://superspacehero.com#aboutme">About Me</a></th>
-				<th><a href="https://superspacehero.com#contact">Contact</a></th>
-			</tr>
-		</table>
-		
 		<a class="anchor" id="aboutme"></a>
+			
+		function load_home() {
+			document.getElementById("content").innerHTML='<object type="text/html" data="/elements.html" ></object>';
+		}
 
 		<p class="title">About Me</p>
 
@@ -309,20 +304,5 @@
 				Sorry, your browser does not support inline SVG.
 			</svg>
 		</div>
-		
-		<script>
-			window.onscroll = function() {scrollFunction()};
-
-				var header = document.getElementById("myHeader");
-				var sticky = header.offsetTop;
-
-				function scrollFunction() {
-				if (window.pageYOffset > sticky) {
-					header.classList.add("sticky");
-				} else {
-					header.classList.remove("sticky");
-				}
-			}
-		</script>
 	</body>
 </html>

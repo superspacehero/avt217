@@ -3,7 +3,7 @@ html
     scroll-behavior: smooth;
 }
 
-body:not(svg)
+body:not(svg.intro)
 {
 	width: 80%;
 	

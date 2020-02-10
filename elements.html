@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		
+  		<meta charset="utf-8">
+		<title>About Me - Asher Pinson</title>
+		<link rel="stylesheet" href="/avt217/asher.css" type="text/css">
+        
+    </head>
+    
+    <body>
+        <table class="header" id="myHeader">
+            <tr>
+                <th><a href="/">Home</a></th>
+                <th><a href="https://superspacehero.com#portfolio">Portfolio</a></th>
+                <th><a href="https://superspacehero.com#aboutme">About Me</a></th>
+                <th><a href="https://superspacehero.com#contact">Contact</a></th>
+            </tr>
+        </table>
+        
+        <script>
+			window.onscroll = function() {scrollFunction()};
+
+				var header = document.getElementById("myHeader");
+				var sticky = header.offsetTop;
+
+				function scrollFunction() {
+				if (window.pageYOffset > sticky) {
+					header.classList.add("sticky");
+				} else {
+					header.classList.remove("sticky");
+				}
+			}
+		</script>
+
+		<hr>
+
+		<footer>
+			<p class="smallcenter">&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Asher Pinson</p>
+		</footer>
+    </body>
+</html>

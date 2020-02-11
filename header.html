@@ -10,25 +10,24 @@
 	<body>
 		<div class="header">
 			<a href="#default" class="logo"><i class="fa fa-rocket"></i> Asher Pinson</a>
-			<div id="myLinks" class="header-right">
+			<nav id="myLinks" class="header-right">
 				<a href="#contact">Portfolio</a>
 				<a href="#about">About</a>
 				<a href="#contact">Contact</a>
-			</div>
+			</nav>
 			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 				<i class="fa fa-bars"></i>
-			</a>
-
-			<script>
-				function myFunction() {
-					var x = document.getElementById("myLinks");
-					if (x.style.display === "block") {
-						x.style.display = "none";
-					} else {
-						x.style.display = "block";
+				<script>
+					function myFunction() {
+							var x = document.getElementById("myLinks");
+							if (x.style.display === "block") {
+								x.style.display = "none";
+							} else {
+								x.style.display = "block";
+						}
 					}
-				}
-			</script>
+				</script>
+			</a>
 		</div>
 	</body>
 </html>

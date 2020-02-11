@@ -47,18 +47,18 @@ body
 }
 
 .header a:hover {
-	background-color: #46017f;
-	color: #deae01;
+	background-color: #5904a0;
+	color: #ffd53a;
 }
 
 .header a.active {
-	background-color: #a334ff;
-	color: #ffe380;
+	background-color: #6411a9;
+	color: #f7d661;
 }
 
 .header a.active:hover {
-	background-color: #500193;
-	color: #ffcd1b;
+	background-color: #8218da;
+	color: #ffe176;
 }
 
 .header-right {

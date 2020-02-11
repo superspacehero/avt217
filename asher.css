@@ -5,53 +5,59 @@ html
 
 body
 {
-	background-color: #2a004c;
+	background-color: #32005c;
 	font-size: 1.5em;
 	font-family: Helvetica;
 	color: #e5b401;
 }
 
-.header {
+.header
+{
 	position: sticky;
 	top: 0;
 	left: 0;
-
 	overflow: hidden;
-	background-color: #470181;
+	background-color: #7002ca;
 }
 
-.header #myLinks {
+.header #myLinks
+{
 	display: none;
 }
 
-.header a {
-	padding: 0.75em 0.75em;
+.header a
+{
+	padding: 0.5em 0.5em;
 	display: block;
 	float: left;
-	color: #e5b401;
+	color: #f8da6d;
 	text-decoration: none;
-	font-size: 1.5em; 
+	font-size: 1.25em;
 }
 
-.header a.logo {
-	font-size: 1.5em;
+.header a.logo
+{
+	font-size: 1.25em;
 	font-weight: bold;
 }
 
-.header a.icon {
-	background: black;
+.header a.icon
+{
+	background: #0e001a;
 	display: none;
 	position: absolute;
 	right: 0;
 	top: 0;
 }
 
-.header a:hover {
+.header a:hover
+{
 	background-color: #5904a0;
 	color: #ffd53a;
 }
 
-.header a.active {
+.header a.active
+{
 	background-color: #6411a9;
 	color: #f7d661;
 }
@@ -67,28 +73,40 @@ body
 	float: right;
 }
 
-@media screen and (max-width: 640px) {
-	.header a {
+footer
+{
+    bottom: 0;
+}
+
+@media screen and (max-width: 640px)
+{
+	.header a
+	{
 		float: none;
 		display: block;
 		text-align: left;
 	}
 
-	.header a.icon {
+	.header a.icon
+	{
 		display: block;
 	}
 
-	.header-right {
+	.header-right
+	{
 		float: none;
 	}
 
-	.header #myLinks {
+	.header #myLinks
+	{
 		display: none;
 	}
 }
 
-@media screen and (min-width: 641px) {
-	.header #myLinks {
+@media screen and (min-width: 641px)
+{
+	.header #myLinks
+	{
 		display: block;
 	}
 }
@@ -104,18 +122,19 @@ h1
 
 ul
 {
-	margin: 0.25em 0.25em;
+	margin: 0.3em 1em;
 }
 
 p
 {
-	margin: 0.25em 0.25em;
+	margin: 0.3em 1em;
+	line-height: 1.25em;
 }
 
 p.title
 {
 	font-weight: bold;
-	font-size: 2.5em;
+	font-size: 1.75em;
 }
 
 p.center
@@ -134,6 +153,9 @@ p.smallcenter
 hr
 {
 	width:80%;
+	color: #ffcd1b;
+	background-color: #ffcd1b;
+	border-color: #ffcd1b;
 }
 
 img
@@ -148,7 +170,6 @@ h1 img
 
 a
 {
-	color: #ddd;
 	transition: background 50ms ease-out, transform 150ms ease-out;
 	text-decoration: none;
 }

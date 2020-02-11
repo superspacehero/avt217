@@ -12,36 +12,56 @@ body
 	margin: 2vw auto;
 }
 
-nav {
+.header {
 	position: sticky;
-	padding: 0.25em 0.5em;
-	top:0;
-	left:0;
-	right:0;
+	top: 0;
+	left: 0;
 
 	overflow: hidden;
-	background-color: #333;
+	background-color: #f1f1f1;
 }
 
-ul {
-	list-style-type: none;
-	margin: 0;
-	overflow: hidden;
+.header #myLinks {
+	display: none;
 }
 
-li {
+.header a {
+	padding: 0.75em 0.75em;
+	display: block;
 	float: left;
-}
-
-li a {
-	display: inline-block;
-	text-align: center;
-	padding: 0.25em 0.5em;
+	color: black;
+	vertical-align: middle;
 	text-decoration: none;
+	font-size: 1.5em; 
 }
 
-li a:hover {
-	background-color: #111;
+.header a.logo {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.header a.icon {
+	background: black;
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.header a:hover {
+	background-color: #ccc;
+	color: #eee;
+}
+
+.header a.active {
+	background-color: dodgerblue;
+	color: white;
+}
+
+.header-right {
+	position: sticky;
+	top: 2 em;
+	float: right;
 }
 
 .content {

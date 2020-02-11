@@ -50,10 +50,9 @@ body
 	top: 0;
 }
 
-.header a:hover
+.header a.icon:active
 {
-	background-color: #5904a0;
-	color: #ffd53a;
+	background-color: #05000a;
 }
 
 .header a.active
@@ -62,20 +61,10 @@ body
 	color: #f7d661;
 }
 
-.header a.active:hover {
-	background-color: #8218da;
-	color: #ffe176;
-}
-
 .header-right {
 	position: sticky;
 	/*! top: 1.5em; */
 	float: right;
-}
-
-footer
-{
-    bottom: 0;
 }
 
 @media screen and (max-width: 640px)
@@ -108,6 +97,22 @@ footer
 	.header #myLinks
 	{
 		display: block;
+	}
+
+	a:hover
+	{
+		transform: scale(1.1);
+	}
+
+	.header a.active:hover {
+		background-color: #8218da;
+		color: #ffe176;
+	}
+
+	.header a:hover
+	{
+		background-color: #5904a0;
+		color: #ffd53a;
 	}
 }
 
@@ -172,11 +177,6 @@ a
 {
 	transition: background 50ms ease-out, transform 150ms ease-out;
 	text-decoration: none;
-}
-
-a:hover
-{
-	transform: scale(1.1);
 }
 
 a:active

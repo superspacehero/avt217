@@ -27,17 +27,17 @@ body
 
 .header a
 {
-	padding: 0.5em 0.5em;
+	padding: 0.5em 0.75em;
 	display: block;
 	float: left;
 	color: #f8da6d;
 	text-decoration: none;
-	font-size: 1.25em;
+	font-size: 1em;
 }
 
 .header a.logo
 {
-	font-size: 1.25em;
+	font-size: 1em;
 	font-weight: bold;
 }
 

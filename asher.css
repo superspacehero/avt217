@@ -9,7 +9,6 @@ body
 	font-size: 1.5em;
 	font-family: Helvetica;
 	color: #e5b401;
-	margin: 2vw auto;
 }
 
 .header {
@@ -18,7 +17,7 @@ body
 	left: 0;
 
 	overflow: hidden;
-	background-color: #f1f1f1;
+	background-color: #470181;
 }
 
 .header #myLinks {
@@ -29,8 +28,7 @@ body
 	padding: 0.75em 0.75em;
 	display: block;
 	float: left;
-	color: black;
-	vertical-align: middle;
+	color: #e5b401;
 	text-decoration: none;
 	font-size: 1.5em; 
 }
@@ -54,13 +52,13 @@ body
 }
 
 .header a.active {
-	background-color: dodgerblue;
-	color: white;
+	background-color: #a334ff;
+	color: #ffe380;
 }
 
 .header-right {
 	position: sticky;
-	top: 2em;
+	/*! top: 1.5em; */
 	float: right;
 }
 
@@ -92,12 +90,6 @@ body
 
 
 
-.content {
-	padding-top: 1.5em;
-}
-
-
-
 h1
 {
 	font-weight: bold;
@@ -105,15 +97,20 @@ h1
 	color: #ffcd1b;
 }
 
-p.title
+ul
 {
-	font-weight: bold;
-	font-size: 2.5em;
+	margin: 0.25em 0.25em;
 }
 
 p
 {
-	margin: 0.25em 5vh;
+	margin: 0.25em 0.25em;
+}
+
+p.title
+{
+	font-weight: bold;
+	font-size: 2.5em;
 }
 
 p.center
@@ -126,7 +123,12 @@ p.smallcenter
 {
 	text-align: center;
 	font-weight: bold;
-	font-size: 0.5em;
+	font-size: 1em;
+}
+
+hr
+{
+	width:80%;
 }
 
 img
@@ -149,13 +151,11 @@ a
 a:hover
 {
 	transform: scale(1.1);
-	text-decoration: underline;
 }
 
 a:active
 {
 	transform: scale(0.9);
-	text-decoration: underline;
 }
 
 a.anchor

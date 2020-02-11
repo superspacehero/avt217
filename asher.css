@@ -64,6 +64,34 @@ body
 	float: right;
 }
 
+@media screen and (max-width: 640px) {
+	.header a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+
+	.header a.icon {
+		display: block;
+	}
+
+	.header-right {
+		float: none;
+	}
+
+	.header #myLinks {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 641px) {
+	.header #myLinks {
+		display: block;
+	}
+}
+
+
+
 .content {
 	padding-top: 1.5vh;
 }

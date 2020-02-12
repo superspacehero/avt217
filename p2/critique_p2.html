@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Restaurant Critiques - Asher Pinson</title>
-        <style>
-            body {
-            font-family: Helvetica;
-            text-align: center;
-            }
-            p {
-            margin: 1em 5%;
-            }
-            img {
-            max-width: 100%;
-            }
-        </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurant Critiques - Asher Pinson</title>
+    <style>
+    body {
+    background: DarkSlateGray;
+    color: white;
+    font-family: Helvetica;
+    text-align: center;
+    }
+    p {
+    margin: 1em 5%;
+    }
+
+    * {
+    box-sizing: border-box;
+    }
+
+    .row {
+    }
+
+    .column {
+    padding: 0.5em;
+    }
+
+    .column.desktop {
+    float: left;
+    width: 75%;
+    }
+
+    .column.mobile {
+    width: 25%;
+    }
+    </style>
     </head>
 
     <body>
-
-        <img src="http://studio323.com/teaching/217addon/prev_stwork/lauren_catherine_lapid/project2/img/shakeshack.png">
+        <div class="row">
+            <img class="column desktop" src="img/BlazePizza_Desktop.png">
+            <img class="column mobile" src="img/BlazePizza_Mobile.png">
+        </div>
         <p>
             Blaze Pizza's landing page is very direct in its approach.
             It's uncluttered, and nearly every link takes you through the linear ordering process they use - picking a location,
@@ -30,7 +51,10 @@
 
         <hr>
 
-        <img src="https://ryanlindsay196.github.io/AVT217/p2/img/SteakNShake.PNG">
+        <div class="row">
+            <img class="column desktop" src="img/PandaExpress_Desktop.png">
+            <img class="column mobile" src="img/PandaExpress_Mobile.png">
+        </div>
         <p>
             Panda Express manages to be even more direct than Blaze's - the landing page opens with a prominent animated hero image filling the entire screen advertising their newest menu item,
             allowing you to add it to your order straight away.

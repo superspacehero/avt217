@@ -5,7 +5,11 @@ html
 
 body
 {
-	background-color: #32005c;
+	background-color: #1c0033;
+	background-image: url('https://superspacehero.github.io/avt217/Fade.png');
+	background-attachment: fixed;
+	background-repeat: repeat-x;
+	background-size: cover;
 	font-size: 1.5em;
 	font-family: Helvetica;
 	color: #e5b401;
@@ -17,7 +21,7 @@ body
 	top: 0;
 	left: 0;
 	overflow: hidden;
-	background-color: #7002ca;
+	background-color: #4c1876;
 }
 
 .header #myLinks

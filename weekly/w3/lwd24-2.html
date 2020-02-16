@@ -1,17 +1,36 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>transparency test</title>
-      <style>
-        body {background-color: grey;}
-        p {text-align: center;}
-        img {margin: 2em;}
-      </style>
-  </head>
-  <body>
-    <img src="img/circle.gif" width="250" height="250" alt="circle gif"/>
-    <img src="img/circle24.png" width="250" height="250" alt="circle 24"/>
-    <img src="img/cirlce8.png" width="250" height="250" alt="circle 8"/>
-  </body>
+	<head>
+		<title>Exercise 24-2: Transparency Test</title>
+			<style>
+				body {
+					background: Gray;
+					font-family: "Arial";
+				}
+
+				.grid-container {
+					text-align: center;
+					display: grid;
+					grid-template-columns: auto auto auto;
+				}
+
+				.grid-item {
+					font-size: 1rem;
+					width: 96%;
+				}
+			</style>
+	</head>
+	
+	<body>
+
+		<div class="grid-container">
+
+			<img class="grid-item" src="img/circle.gif"></img>
+
+			<img class="grid-item" src="img/circle24.png"></img>
+
+			<img class="grid-item" src="img/circle8.png"></img>
+
+		</div>
+	</body>
 </html>

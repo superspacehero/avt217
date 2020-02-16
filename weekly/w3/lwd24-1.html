@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body {
+				background: Gray;
+				font-family: "Arial";
+			}
+
+			.grid-container {
+				text-align: center;
+				display: grid;
+				grid-template-columns: auto auto auto;
+				padding: 1%;
+			}
+
+			.grid-container.boats {
+				background-color: #2196F3;
+			}
+
+			.grid-container.asian {
+				background-color: DarkOrange;
+			}
+
+			.grid-item {
+				font-size: 1rem;
+				width: 98%;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1>Exercise 24-1: Format and File Size</h1>
+
+		<div class="grid-container boats">
+
+			<div class="grid-item">
+				<img class="grid-item" src="img/boats.png"></img>
+				<p>PNG-24, 262 KB</p>
+			</div>
+
+			<div class="grid-item">
+				<img class="grid-item" src="img/boats8-bit.png"></img>
+				<p>PNG-8, 131 KB</p>
+			</div>
+
+			<div class="grid-item">
+				<img class="grid-item" src="img/boats.jpg"></img>
+				<p>JPEG 60%, 131 KB</p>
+			</div>
+
+		</div>
+
+		<div class="grid-container asian">
+
+			<div class="grid-item">
+				<img class="grid-item" src="img/asian-100.jpg"></img>
+				<p>JPEG 100%, 22.7 KB</p>
+			</div>
+
+			<div class="grid-item">
+				<img class="grid-item" src="img/asian-60.jpg"></img>
+				<p>JPEG 60%, 8.7 KB</p>
+			</div>
+
+			<div class="grid-item">
+				<img class="grid-item" src="img/asian-10.jpg"></img>
+				<p>JPEG 10%, 3.3 KB</p>
+			</div>
+
+			<div class="grid-item">
+				<img class="grid-item" src="img/asian.png"></img>
+				<p>PNG-24, 16.5 KB</p>
+			</div>
+
+			<div class="grid-item">
+				<img class="grid-item" src="img/asian-32colors.png"></img>
+				<p>PNG-8(indexed 32 colors), 3.3 KB</p>
+			</div>
+		
+		</div>
+
+	</body>
+</html>

@@ -1,23 +1,32 @@
-<!DOCTYPE html>
 <html>
-	<head>
+    <head>
 		<title>Project 2 sketches </title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<style>
-			body {
-				font-family: Helvetica;
-			}
-			img {
-				left: 5%;
-				right: 5%;
-			}
-		</style>
+            body {
+                background: Gray;
+                font-family: "Arial";
+            }
+
+            .grid-container {
+                text-align: center;
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+
+            .grid-item {
+                font-size: 1rem;
+                width: 96%;
+            }
+        </style>
 	</head>
 
 	<body>
 		<h1>Project 2 sketches</h1>
 		
-		<p><img src="home.png" alt="Home idea"></p>
-		<p><img src="menu.png" alt="Menu idea"></p>
-	</body>
+        <div class="grid-container">
+            <img class="grid-item" src="home.png" alt="Home idea">
+            <img class="grid-item" src="menu.png" alt="Menu idea">
+        </div>	
+    </body>
 </html>

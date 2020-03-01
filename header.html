@@ -1,29 +1,17 @@
 <!DOCTYPE html>
 <html>
 	<body>
-        <table class="header" id="myHeader">
-            <tr>
-                <th><a href="/">Home</a></th>
-                <th><a href="https://superspacehero.com#portfolio">Portfolio</a></th>
-                <th><a href="https://superspacehero.com#aboutme">About Me</a></th>
-                <th><a href="https://superspacehero.com#contact">Contact</a></th>
-            </tr>
-        </table>
-        
-        <script>
-			window.onscroll = function() {scrollFunction()};
-
-				var header = document.getElementById("myHeader");
-				var sticky = header.offsetTop;
-
-				function scrollFunction() {
-				if (window.pageYOffset > sticky) {
-					header.classList.add("sticky");
-				} else {
-					header.classList.remove("sticky");
-				}
-			}
-		</script>
-    </body>
+		<div id="Navbar" class="navbar">
+			<nav class="links" id="myLinks">
+				<a class="home" href="#">
+				Asher Pinson
+				</a>
+				<a href="#portfolio" class="nav">Portfolio</a>
+				<a href="#about" class="nav">About Me</a>
+				<a href="#resume" class="nav">Resume</a>
+				<a href="#contact" class="nav">Contact</a>
+			</nav>
+		</div>
+	</body>
 	
 </html>

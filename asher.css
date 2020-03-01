@@ -209,12 +209,12 @@ body {
 .hero-image {
 	font-family:Helvetica, serif;
 	font-weight:100;
-	background-image:url("//grapesjs.com/img/bg-gr-v.png"), url(./img/work-desk.jpg);
-	background-attachment:scroll, scroll;
+	background-image:linear-gradient(to right, #0006 0%, #0000 50%), url(/avt217/Opa-Opa.gif)
+	background-attachment:scroll, fixed;
 	background-position:left top, center bottom;
 	background-repeat:repeat-y, no-repeat;
 	background-size:contain, cover;
-	margin:0 0 0 0;
+	margin:0;
 	height:100vh;
 	padding:75vh 0 0 0;
 	display:inline-block;

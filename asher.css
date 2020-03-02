@@ -13,15 +13,6 @@ body
 
 .header
 {
-	position: sticky;
-	top: 0;
-	left: 0;
-	overflow: hidden;
-	background: linear-gradient(to right, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
-}
-
-.header
-{
 	margin: 0;
 	
 }
@@ -173,6 +164,7 @@ h1 img
 
 a
 {
+	color: inherit;
 	transition: background 50ms ease-out, transform 150ms ease-out;
 	text-decoration: none;
 }
@@ -192,7 +184,7 @@ a.anchor
 body {
 	margin: 0;
 	color:#ffb300;
-    	text-shadow:0.5rem 0.5rem 1rem #25003e80;
+	text-shadow:0.4rem 0.4rem 0.8rem #25003e80;
 }
 
 .container-width {
@@ -203,26 +195,28 @@ body {
 }
 
 .hero-image {
-	font-family:Helvetica, serif;
-	font-weight:100;
-	background-image: linear-gradient(to right, #000a 0%, #0000 50%), url(/avt217/Opa-Opa.gif);
+	/* font-weight:100; */
+	background-image: linear-gradient(to right, #000a 0%, #0002 50%), url(/avt217/Opa-Opa.gif);
 	background-attachment:scroll, fixed;
 	background-position:left top, center center;
 	background-repeat:repeat-y, no-repeat;
 	background-size:contain, cover;
-	margin:0;
 	height:100vh;
-	padding: 80vh 0 0 0;
-	display:inline-block;
+	/* padding: 80vh 0 0 0; */
+	/* display:inline-block; */
 	width:100%;
+	overflow: hidden;
 }
 
 .hero-title {
-	margin:0 0 0 5vw;
+	display: block;
+	margin: 0 0 0 5vw;
 	font-size:10vmin;
 	font-family:Arial Black, Gadget, sans-serif;
 	line-height:1em;
-	text-align:left;
+	float: left;
+	position: relative;
+	top: 80%;
 }
 
 .hero-title.subtitle {
@@ -232,15 +226,21 @@ body {
 .navbar {
 	width:100%;
 	position:fixed;
-	display:block;
 	bottom:100%;
-	margin:0 0 0;
-	top:0;
-	opacity:1;
+	top: 0;
 	background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);;
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:5vmin;
+	font-family: Arial, Helvetica, sans-serif;
 	height:8vh;
+}
+
+.home {
+
+	font-size: 5vmin;
+}
+
+nav {
+	left: 5vmin;
+	font-size: 3vmin;
 }
 
 div.intro {
@@ -524,25 +524,4 @@ transform:translate(0%,0%);
 }
 91.6%{
 transform:translate(0%,0%);
-}
-100%{
-transform:translate(-200%,0%);
-}
-}
-@media (max-width: 992px){
-	.lead-title{
-		font-size:4em;
-		margin:0 0 0 2vw;
-		text-align:left;
-	}
-	.lead-title{
-		font-size:4em;
-		margin:0 0 0 2vw;
-		text-align:left;
-	}
-}
-@media (max-width: 480px){
-	.lead-title{
-		margin:0 0 0 10vw;
-	}
 }

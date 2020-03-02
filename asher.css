@@ -93,7 +93,7 @@ body
 
 	a:hover
 	{
-		transform: scale(1.1);
+		transform: scale(1.05);
 	}
 
 	.header a.active:hover {
@@ -110,9 +110,7 @@ body
 
 h1
 {
-	font-weight: bold;
-	font-size: 4em;
-	color: #ffcd1b;
+	font-size: 6vmin;
 }
 
 ul
@@ -126,40 +124,11 @@ p, ul, hr
 	line-height: 1.25em;
 }
 
-p.title
-{
-	font-weight: bold;
-	font-size: 1.75em;
-}
-
-p.center
-{
-	text-align: center;
-	font-weight: bold;
-}
-
-p.smallcenter
-{
-	text-align: center;
-	font-weight: bold;
-	font-size: 1em;
-}
-
 hr
 {
 	color: inherit;
 	background-color: inherit;
 	border-color: inherit;
-}
-
-img
-{
-	margin: 0 1.5vh 0 0;
-}
-
-h1 img
-{
-	margin-bottom: -1.5vh;
 }
 
 a
@@ -171,7 +140,7 @@ a
 
 a:active
 {
-	transform: scale(0.8);
+	transform: scale(0.95);
 }
 
 a.anchor
@@ -210,13 +179,12 @@ body {
 
 .hero-title {
 	display: block;
-	margin: 0 0 0 5vw;
+	margin: 0 0 0 5vmin;
 	font-size:10vmin;
 	font-family:Arial Black, Gadget, sans-serif;
 	line-height:1em;
-	float: left;
 	position: relative;
-	top: 80%;
+	top: 80vh;
 }
 
 .hero-title.subtitle {
@@ -233,15 +201,19 @@ body {
 	height:8vh;
 }
 
-.home {
-
-	font-size: 5vmin;
+.links {
+    display: grid;
+    grid-auto-flow: column;
+    line-height: 0;
+    padding: 3rem 0rem 0 3rem;
 }
 
-nav {
-	left: 5vmin;
+a.nav {
 	font-size: 3vmin;
+	/* float: right; */
 }
+
+a.nav.home {font-size: 5vmin;/* float: left; */}
 
 div.intro {
 	overflow:hidden;

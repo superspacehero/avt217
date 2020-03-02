@@ -210,10 +210,10 @@ body {
 
 a.nav {
 	font-size: 3vmin;
-	/* float: right; */
 }
-
-a.nav.home {font-size: 5vmin;/* float: left; */}
+a.nav.home {
+    font-size: 5vmin;
+}
 
 div.intro {
 	overflow:hidden;

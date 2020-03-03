@@ -1,0 +1,38 @@
+body
+{
+  background-color: hsla(276, 100%, 10%, 1); font-family: monospace;
+}
+
+
+h1,h2,h4
+{
+  color: #ffb300;
+}
+
+h3
+{
+  color:#ffe099;
+  font-size: 18px;
+}
+
+a
+{
+  text-decoration: none;
+  color: #fff0cc;
+}
+
+p
+{
+  padding-left: 2rem;
+  transition: background 50ms ease-out, transform 150ms ease-out;
+}
+
+p:hover
+{
+    transform: scale(1.05);
+}
+
+p:active
+{
+	transform: scale(0.95);
+}

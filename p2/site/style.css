@@ -310,11 +310,11 @@ a:active
 }
 
 .secondary-buttons.story {
-  background-image: linear-gradient(to top, #000c 0%, #0000 50%), url(https://superspacehero.com/avt217/weekly/w4/images/muffin.png);
+  background-image: linear-gradient(to top, #000c 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/img/story.jpg);
 }
 
 .secondary-buttons.careers {
-  background-image: linear-gradient(to top, #000c 0%, #0000 50%), url(https://superspacehero.com/avt217/weekly/w4/salads.jpg);
+  background-image: linear-gradient(to top, #000c 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/img/careers.jpg);
 }
 
 .secondary-buttons.nutrition {

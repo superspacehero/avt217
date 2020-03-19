@@ -8,8 +8,21 @@ body {
   background-color: #d83100;
 }
 
-.clearfix {
-  clear: both;
+a
+{
+	color: inherit;
+	transition: background 50ms ease-out, transform 150ms ease-out;
+	text-decoration: none;
+}
+
+a:hover
+{
+	transform: scale(1.05);
+}
+
+a:active
+{
+	transform: scale(0.95);
 }
 
 .flex-sect {
@@ -52,7 +65,7 @@ body {
 }
 
 .flex-title-button {
-  font-size: 3vmin;
+  font-size: 2.5vmin;
   color: white;
   background-color: #d83100;
   padding: 16px;
@@ -177,7 +190,7 @@ body {
   top: 0;
   padding: 16px 6% 16px 2.5%;
   height: 12%;
-  font-family: Arial;
+  font-family: Arial Narrow;
   font-size: 3em;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
 
@@ -186,7 +199,7 @@ body {
   */
 }
 
-.googlemaps {
+.fillrect {
   height: 100%;
   width: 100%;
 }
@@ -194,10 +207,6 @@ body {
 #i89rvh {
   flex-basis: 70%;
   flex: 1 0 50%;
-}
-
-#itsoaq {
-  padding: 16px 6% 16px 2.5%;
 }
 
 @keyframes fadeEffect {
@@ -211,14 +220,15 @@ body {
 }
 @media (max-width: 1280px) {
 	.flex-title {
-	width: 50%;
+		width: 50%;
 	}
 }
 
 @media (max-width: 768px) {
 
 	.flex-title {
-	  width: 100%;
+		width: 100%;
+		top: 60%;
 	}
 	
 	.flex-title-text {
@@ -271,7 +281,7 @@ body {
 }
 
 .home.hero {
-  background-image: url(https://superspacehero.com/avt217/p2/site/img/burger1.jpg);
+  background-image: linear-gradient(to right, #000b 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/img/burger1.jpg);
 }
 
 .secondary-buttons {

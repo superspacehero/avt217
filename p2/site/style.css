@@ -193,15 +193,18 @@ a:active
   font-family: Arial Narrow;
   font-size: 3em;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
-
-  /*
-    z-index: 99;
-  */
 }
 
 .fillrect {
   height: 100%;
   width: 100%;
+}
+
+.right-gradient {
+	background: linear-gradient(to left, #000b 0%, #0000 50%);
+
+	float: left;
+	position: absolute;
 }
 
 #i89rvh {
@@ -307,13 +310,13 @@ a:active
 }
 
 .secondary-buttons.story {
-  background-image: url(https://superspacehero.com/avt217/weekly/w4/images/muffin.png);
+  background-image: linear-gradient(to top, #000c 0%, #0000 50%), url(https://superspacehero.com/avt217/weekly/w4/images/muffin.png);
 }
 
 .secondary-buttons.careers {
-  background-image: url(https://superspacehero.com/avt217/weekly/w4/salads.jpg);
+  background-image: linear-gradient(to top, #000c 0%, #0000 50%), url(https://superspacehero.com/avt217/weekly/w4/salads.jpg);
 }
 
 .secondary-buttons.nutrition {
-  background-image: url(https://superspacehero.com/avt217/weekly/w4/images/bread.png);
+  background-image: linear-gradient(to top, #000c 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/img/burger2.jpg);
 }

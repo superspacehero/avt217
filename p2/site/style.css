@@ -197,9 +197,16 @@ a:active
 	font-family: Arial Black;
 }
 
-.footer-text.links {
+.footer-links {
+	flex-basis:70%;
+	min-height:auto;
+}
+
+.footer-text.links{
 	position: relative;
 	font-weight: 100;
+	height:100%;
+	text-align:center;
 }
 
 #i682t8{

@@ -1,0 +1,309 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #ffd777;
+  background-color: #d83100;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.flex-sect {
+  font-family: Helvetica, serif;
+  height: 100vh;
+  position: relative;
+}
+
+.flex-title {
+  font-weight: 700;
+  padding: 0 5% 0 5%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 20%;
+  bottom: 20%;
+  left: 60%;
+  width: 40%;
+  text-align: center;
+}
+
+.flex-title.left {
+  right: 60%;
+  left: 0;
+  float: left;
+}
+
+.flex-title.right {
+  left: 60%;
+  right: 0;
+  float: right;
+}
+
+.flex-title-text {
+  font-family: Arial Black;
+  font-size: 9vmin;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  
+  line-height: 100%;
+}
+
+.flex-title-button {
+  font-size: 3vmin;
+  color: white;
+  background-color: #d83100;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+
+  cursor: pointer;
+}
+
+.footer-under {
+  color: #eee;
+  position: relative;
+  font-weight: 100;
+  font-family: Helvetica, serif;
+}
+
+.footer-copyright {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+  bottom: 0;
+  padding: 1em 0;
+  position: absolute;
+  width: 100%;
+  font-size: 0.75em;
+}
+
+.footer-text {
+  color: white;
+  font-family: Arial Black;
+}
+
+.footer-text.copyright {
+  width: 100%;
+  padding: 16px 0 16px 6%;
+  font-size: 12px;
+}
+
+.foot-social-btns {
+  display: none;
+  float: right;
+  width: 50%;
+  text-align: right;
+  padding: 5px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+.foot-list {
+  float: left;
+  width: 200px;
+}
+
+.foot-list-title {
+  font-weight: 400;
+  margin-bottom: 10px;
+  padding: 0.5em 0;
+}
+
+.foot-list-item {
+  color: rgba(238, 238, 238, 0.8);
+  font-size: 0.8em;
+  padding: 0.5em 0;
+}
+
+.foot-list-item:hover {
+  color: rgba(238, 238, 238, 1);
+}
+
+.foot-form-cont {
+  width: 300px;
+  float: right;
+}
+
+.foot-form-title {
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 400;
+  margin-bottom: 10px;
+  padding: 0.5em 0;
+  text-align: right;
+  font-size: 2em;
+}
+
+.foot-form-desc {
+  font-size: 0.8em;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 20px;
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.sub-btn {
+  width: 100%;
+  margin: 15px 0;
+  background-color: #785580;
+  border: none;
+  color: #fff;
+  border-radius: 2px;
+  padding: 7px 10px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.sub-btn:hover {
+  background-color: #91699a;
+}
+
+.sub-btn:active {
+  background-color: #573f5c;
+}
+
+.navbar {
+  min-height: auto;
+  width: 100%;
+  position: fixed;
+  display: block;
+  bottom: 0;
+  margin: 0 0 0 0;
+  top: 0;
+  padding: 16px 6% 16px 2.5%;
+  height: 12%;
+  font-family: Arial;
+  font-size: 3em;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+
+  /*
+    z-index: 99;
+  */
+}
+
+.googlemaps {
+  height: 100%;
+  width: 100%;
+}
+
+#i89rvh {
+  flex-basis: 70%;
+  flex: 1 0 50%;
+}
+
+#itsoaq {
+  padding: 16px 6% 16px 2.5%;
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@media (max-width: 1280px) {
+	.flex-title {
+	width: 50%;
+	}
+}
+
+@media (max-width: 768px) {
+
+	.flex-title {
+	  width: 100%;
+	}
+	
+	.flex-title-text {
+		line-height: 80%;
+	}
+
+	.foot-form-cont {
+	width: 400px;
+	}
+
+	.foot-form-title {
+	width: autopx;
+	}
+
+	.row {
+	  align-items: flex-start;
+	  flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 480px) {
+  .foot-lists {
+    display: none;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  padding: 10px;
+}
+
+.cell {
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+
+.logo {
+  font-size: 2rem;
+  flex-basis: 30%;
+  flex: 1 0 50%;
+}
+
+.hero {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.home.hero {
+  background-image: url(https://superspacehero.com/avt217/Opa-Opa.gif);
+}
+
+.secondary-buttons {
+	position: relative;
+	text-align: center;
+	text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+	border-radius: 20px;
+	margin: 10px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	cursor: pointer;
+}
+
+.secondary-buttons-text {
+	font-size: 7vmin;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+.secondary-buttons.story {
+  background-image: url(https://superspacehero.com/avt217/weekly/w4/images/muffin.png);
+}
+
+.secondary-buttons.careers {
+  background-image: url(https://superspacehero.com/avt217/weekly/w4/salads.jpg);
+}
+
+.secondary-buttons.nutrition {
+  background-image: url(https://superspacehero.com/avt217/weekly/w4/images/bread.png);
+}

@@ -15,7 +15,7 @@ body {
 }
 
 .navbar {
-	font-size: 2rem;
+	font-size: calc(1.25vmin + 1.25vmax);
 	width: 100%;
 	position: fixed;
 	display: inline-block;
@@ -52,7 +52,7 @@ a:active, button:active {
 	font-weight: 700;
 	padding: 0 5% 0 5%;
 	display: inline-block;
-	width: 35%;
+	width: 40%;
 	text-align: center;
 	line-height: 0;
 	top: 25%;
@@ -66,16 +66,16 @@ a:active, button:active {
   	transform: translateY(-45%);
 }
 
-.flex-title.left {
+.left {
 	left: 0;
 }
 
-.flex-title.right {
-	right: 5%;
+.right {
+	right: 5vw;
 }
 
 .flex-title-text {
-	font-size: clamp(32px, 12vw, 80px);
+	font-size: calc(3.5vmin + 3.5vmax);
 	text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 
 	line-height: 100%;
@@ -83,7 +83,7 @@ a:active, button:active {
 
 .flex-title-button {
 	font-family: inherit;
-	font-size: clamp(1rem, 1vw, 24px);
+	font-size: calc(0.75vmin + 0.75vmax);
 	color: white;
 	background-color: #d83100;
 	padding: 1rem;
@@ -132,10 +132,6 @@ a:active, button:active {
 	background-image: linear-gradient(to right, #000b 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/img/burger1.jpg);
 }
 
-.menu.hero {
-	background-image: linear-gradient(to right, #000b 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/menu/img/burger1.jpg);
-}
-
 .secondary-buttons {
 	position: relative;
 	text-align: center;
@@ -180,7 +176,8 @@ a:active, button:active {
 
 
 .footer{
-	padding-top: 2rem;
+	font-size: calc(0.65vmin + 0.65vmax);
+	padding-top: 1.5rem;
 	padding-bottom: 1rem;
 	display: flex;
 	align-items: center;
@@ -188,7 +185,7 @@ a:active, button:active {
 
 .footer-copyright {
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
-	padding: 1rem 0;
+	padding: 0;
 	width: 100%;
 }
 
@@ -208,7 +205,7 @@ a:active, button:active {
 }
 
 .social {
-	font-size: 2rem;
+	font-size: calc(1vmin + 1vmax);
 }
 
 .social:hover {
@@ -228,14 +225,14 @@ a:active, button:active {
 .footer-text.copyright {
 	width: 100%;
 	padding: 1rem 0 1rem 5%;
-	font-size: 0.75rem;
+	font-size: calc(0.5vmin + 0.5vmax);
 }
 
 .footer-container {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: stretch;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 
@@ -294,7 +291,7 @@ a:active, button:active {
 		background-image: linear-gradient(to top, #000b 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/img/burger1.jpg);
 	}
 	
-	.menu.hero {
+	`.hero {
 		background-image: linear-gradient(to top, #000b 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/menu/img/burger1.jpg);
 	}
 
@@ -317,4 +314,96 @@ a:active, button:active {
 	.right-gradient {
 		background: linear-gradient(to top, #000b 0%, #0000 50%);
 	}
+}
+
+
+
+.menu-section {
+	
+}
+
+.menu.hero {
+	background-image: linear-gradient(to right, #000b 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/menu/img/burger1.jpg);
+}
+
+.menu-hero {
+	background: linear-gradient(to top, #000b 0%, #0000 50%);
+}
+
+.flex-menu {
+	font-size: 1.5rem;
+	color: #e6a200;
+	background-color: #521300;
+	font-weight: 700;
+	display: flex;
+	position: absolute;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 40vw;
+	height: 100%;
+}
+
+.flex-menu.right {
+	right: 0;
+}
+
+.menu-panel {
+	height: 100%;
+	background-color: #801d00;
+	width: 70%;
+	margin: 0;
+}
+
+.flex-menu-text {
+	width: 100%;
+	font-size: calc(2.5vmin + 2.5vmax);
+	text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+	line-height: 0;
+}
+
+.menu {
+	padding: 0;
+  	list-style-type: none;
+}
+
+.menu-entry {
+  	display: flex;
+  	justify-content: space-between;
+}
+
+.menu-item {
+	text-align: left;
+	margin-top: 0.75rem;
+	margin-bottom: 0.75rem;
+}
+
+.menu-price {
+	text-align: right;
+}
+
+.toppings {
+}
+
+
+
+
+#burgers {
+	
+}
+
+#dogs {
+	
+}
+
+#sandwiches {
+	
+}
+
+#fries {
+	
+}
+
+#toppings {
 }

@@ -10,6 +10,10 @@ body {
 	background-color: #d83100;
 }
 
+.selected {
+	color: #fb833d;
+}
+
 .navbar {
 	font-size: 2rem;
 	width: 100%;
@@ -126,6 +130,10 @@ a:active, button:active {
 
 .home.hero {
 	background-image: linear-gradient(to right, #000b 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/img/burger1.jpg);
+}
+
+.menu.hero {
+	background-image: linear-gradient(to right, #000b 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/menu/img/burger1.jpg);
 }
 
 .secondary-buttons {
@@ -284,6 +292,10 @@ a:active, button:active {
 	
 	.home.hero {
 		background-image: linear-gradient(to top, #000b 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/img/burger1.jpg);
+	}
+	
+	.menu.hero {
+		background-image: linear-gradient(to top, #000b 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/menu/img/burger1.jpg);
 	}
 
 	.flex-title {

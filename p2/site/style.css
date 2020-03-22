@@ -380,12 +380,12 @@ a:active, button:active {
 }
 
 #fries {
-	background-image: linear-gradient(to top, #000b 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/menu/img/burger3.jpg);
+	background-image: linear-gradient(to top, #000b 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/menu/img/sweetpotatofries.jpg);
 	background-position: center center, right center;
 }
 
 #toppings {
-	background-image: linear-gradient(to top, #000b 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/menu/img/burger3.jpg);
+	background-image: linear-gradient(to top, #000b 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/menu/img/toppings.jpg);
 	background-position: center center, left center;
 }
 

@@ -2,6 +2,12 @@
 	box-sizing: border-box;
 }
 
+html {
+    scroll-snap-type: proximity;
+    scroll-snap-points-y: repeat(2vh);
+    scroll-snap-type: y proximity;	
+}
+
 body {
 	font-family: Arial Black;
 	user-select: none;
@@ -45,6 +51,7 @@ a:active, button:active {
 .flex-sect {
 	height: 100vh;
 	position: relative;
+  	scroll-snap-align: start;
 }
 
 .flex-title {
@@ -181,6 +188,8 @@ a:active, button:active {
 	padding-bottom: 1rem;
 	display: flex;
 	align-items: center;
+	
+  	scroll-snap-align: start;
 }
 
 .footer-copyright {
@@ -264,6 +273,11 @@ a:active, button:active {
 }
 
 .navbar-links {
+	display: flex;
+	align-items: center;
+}
+
+.navbar-link-items {
 	font-family: Arial;
 	font-weight: 700;
 	text-align: center;
@@ -331,7 +345,7 @@ a:active, button:active {
 }
 
 .flex-menu {
-	font-size: 1.5rem;
+	font-size: calc(1vmin + 1vmax);
 	color: #e6a200;
 	background-color: #521300;
 	font-weight: 700;

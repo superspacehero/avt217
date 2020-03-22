@@ -285,51 +285,6 @@ a:active, button:active {
 	line-height: 120px;
 }
 
-@media (max-width: 1280px) {
-	
-	.flex-title {
-		width: 50%;
-	}
-
-	.logo {
-		flex-basis: 70%;
-	}
-}
-
-@media (max-width: 768px) {
-	.flex-title {
-		width: 60%;
-	}
-	
-	.home.hero {
-		background-image: linear-gradient(to top, #000b 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/img/burger1.jpg);
-	}
-	
-	`.hero {
-		background-image: linear-gradient(to top, #000b 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/menu/img/burger1.jpg);
-	}
-
-	.flex-title {
-		width: 100%;
-		top: 60%;
-	}
-
-	.flex-title.right {
-		left: 0;
-		right: 0;
-		float: left;
-	}
-
-	.row {
-		align-items: flex-start;
-		flex-wrap: wrap;
-	}
-
-	.right-gradient {
-		background: linear-gradient(to top, #000b 0%, #0000 50%);
-	}
-}
-
 
 
 .menu-section {
@@ -369,12 +324,9 @@ a:active, button:active {
 	margin: 0;
 }
 
-.flex-menu-text {
-	width: 100%;
-	font-size: calc(2.5vmin + 2.5vmax);
+.flex-menu-title {
+	font-size: calc(2.5vmin + 1.5vmax);
 	text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-
-	line-height: 0;
 }
 
 .menu {
@@ -393,7 +345,7 @@ a:active, button:active {
 	margin-bottom: 0.75rem;
 }
 
-.menu-price {
+.menu-item.price {
 	text-align: right;
 }
 
@@ -420,4 +372,57 @@ a:active, button:active {
 }
 
 #toppings {
+
+
+@media (max-width: 1280px) {
+	
+	.flex-title {
+		width: 50%;
+	}
+
+	.logo {
+		flex-basis: 70%;
+	}
+}
+
+@media (max-height: 1440px) {
+	.menu-item {
+		text-align: left;
+		margin-top: 1;
+		margin-bottom: 1;
+	}
+}
+
+@media (max-width: 768px) {
+	.flex-title {
+		width: 60%;
+	}
+	
+	.home.hero {
+		background-image: linear-gradient(to top, #000b 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/img/burger1.jpg);
+	}
+	
+	`.hero {
+		background-image: linear-gradient(to top, #000b 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/menu/img/burger1.jpg);
+	}
+
+	.flex-title {
+		width: 100%;
+		top: 60%;
+	}
+
+	.flex-title.right {
+		left: 0;
+		right: 0;
+		float: left;
+	}
+
+	.row {
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+
+	.right-gradient {
+		background: linear-gradient(to top, #000b 0%, #0000 50%);
+	}
 }

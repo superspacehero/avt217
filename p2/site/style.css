@@ -3,9 +3,8 @@
 }
 
 html {
-    scroll-snap-type: mandatory;
-    scroll-snap-points-y: repeat(100vh);
-    scroll-snap-type: y mandatory;	
+    scroll-snap-type: y mandatory;
+	/* scroll-snap-stop: always; */
 }
 
 body {
@@ -145,8 +144,8 @@ a:active, button:active {
 	text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 
-	border-radius: 20px;
-	margin: 10px;
+	border-radius: 2rem;
+	margin: 1rem;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -163,7 +162,7 @@ a:active, button:active {
 }
 
 .secondary-buttons-text {
-	font-size: clamp(32px, 6vw, 64px);
+	font-size: calc(4vmin + 2vmax);
 	width: 100%;
 	position: absolute;
 	bottom: 0;

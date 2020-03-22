@@ -3,9 +3,9 @@
 }
 
 html {
-    scroll-snap-type: proximity;
-    scroll-snap-points-y: repeat(2vh);
-    scroll-snap-type: y proximity;	
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;	
 }
 
 body {
@@ -347,9 +347,6 @@ a:active, button:active {
 
 .menu-item.price {
 	text-align: right;
-}
-
-.toppings {
 }
 
 

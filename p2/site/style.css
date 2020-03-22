@@ -365,17 +365,17 @@ a:active, button:active {
 
 
 #burgers {
-	background-image: linear-gradient(to top, #000b 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/menu/img/burger3.jpg);
+	background-image: linear-gradient(to top, #000b 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/menu/img/hamburger.jpg);
 	background-position: center center, left center;
 }
 
 #dogs {
-	background-image: linear-gradient(to top, #000b 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/menu/img/burger3.jpg);
+	background-image: linear-gradient(to top, #000b 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/menu/img/hotdog.jpg);
 	background-position: center center, right center;
 }
 
 #sandwiches {
-	background-image: linear-gradient(to top, #000b 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/menu/img/burger3.jpg);
+	background-image: linear-gradient(to top, #000b 0%, #0000 50%), url(https://superspacehero.com/avt217/p2/site/menu/img/grilledcheese.jpg);
 	background-position: center center, left center;
 }
 

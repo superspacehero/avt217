@@ -293,7 +293,7 @@ a:active, button:active {
 	
 	background-repeat: repeat;
 	background-position: left center;
-	background-size: contain;
+	background-size: cover;
 }
 
 .menu.hero {

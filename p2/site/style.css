@@ -5,6 +5,7 @@
 html {
     scroll-snap-type: y mandatory;
 	/* scroll-snap-stop: always; */
+	scroll-behavior: smooth;
 }
 
 body {
@@ -13,6 +14,10 @@ body {
 	margin: 0;
 	color: #ffd777;
 	background-color: #d83100;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .selected {
@@ -308,6 +313,7 @@ a:active, button:active {
 .flex-menu {
 	font-size: calc(1vmin + 1vmax);
 	color: #e6a200;
+	background-image: linear-gradient(to right, #0000 0%, rgba(0, 0, 0, 0.35) 15%, rgba(0, 0, 0, 0.35) 85%, #0000 100%);
 	background-color: #521300;
 	font-weight: 700;
 	display: flex;
@@ -363,7 +369,7 @@ a:active, button:active {
 
 
 .menu-note {
-	color: #b37d00;
+	color: #b16026;
 }
 
 

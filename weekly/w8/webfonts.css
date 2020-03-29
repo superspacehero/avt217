@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'action_manregular';
+    src: url('Action_Man-webfont.eot');
+    src: url('Action_Man-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Action_Man-webfont.woff2') format('woff2'),
+         url('Action_Man-webfont.woff') format('woff'),
+         url('Action_Man-webfont.ttf') format('truetype'),
+         url('Action_Man-webfont.svg#action_manregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cmu_typewriter_textitalic';
+    src: url('cmunit-webfont.eot');
+    src: url('cmunit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('cmunit-webfont.woff2') format('woff2'),
+         url('cmunit-webfont.woff') format('woff'),
+         url('cmunit-webfont.ttf') format('truetype'),
+         url('cmunit-webfont.svg#cmu_typewriter_textitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body  {
+    background-color: purple;
+    color: gold;
+
+}
+
+h1,h2,h3,h4,p,h5,h6 {
+    font-size: 24px;
+}
+
+h1  {
+    font-family: 'action_manregular';
+}
+
+h2  {
+    font-family: 'cmu_typewriter_textitalic';
+}
+
+  h3  {
+    font-family: 'Gotu', sans-serif;
+    font-weight: 400;
+}
+
+h4  {
+    font-family: 'Poppins', sans-serif;;
+    font-weight: 900;
+}
+
+p {
+    font-family: 'Spicy Rice', cursive;
+}
+
+h5  {
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+h6  {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
